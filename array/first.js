@@ -1,7 +1,8 @@
 if (!Array.prototype.first) {
   Object.defineProperty(Array.prototype, 'first', {
-    get: function() {
-      return this[0];
-    }
+    value: function(num) {
+      var n = num ? num : 1;
+      return this.splice(0, n);
+    } 
   });
 }
