@@ -1,7 +1,12 @@
 if (!Array.prototype.last) {
   Object.defineProperty(Array.prototype, 'last', {
-    get: function() {
-      return this.splice(-1, 1);
-    }
+    value: function(num) {
+      if(num){
+         return this.splice(this.length - num, this.length);
+      }
+      else{
+        return this.splice(this.length - 1, this.length);
+      }
+    } 
   });
 }
