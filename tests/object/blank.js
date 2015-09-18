@@ -5,16 +5,16 @@ require('../../object/blank');
 
 describe('blank', function() {
 
-  it('should return true if object has items', function() {
+  it('should return false if object has items', function() {
     var object = {name: 'quintin', sex: 'male'}
 
-    expect(object.blank).to.eql(true);
+    expect(object.blank).to.eql(false);
   })
 
-  it('should return false if object is empty', function() {
+  it('should return true if object is empty', function() {
     var object = {}
 
-    expect(object.blank).to.eql(false);
+    expect(object.blank).to.eql(true);
   })
 
 });

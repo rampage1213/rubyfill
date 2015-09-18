@@ -1,8 +1,7 @@
 if (!Object.prototype.blank) {
   Object.defineProperty(Object.prototype, "blank", {
     get: function() {
-      var key = 0;
-      if (key < Object.keys(this).length){
+      if (Object.keys(this).length === 0){
         return true;
       }
       else{
