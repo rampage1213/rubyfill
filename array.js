@@ -5,3 +5,4 @@ require('./array/flatten');
 require('./array/first');
 require('./array/last');
 require('./array/take');
+require('./array/drop');
