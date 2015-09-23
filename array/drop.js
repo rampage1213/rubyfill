@@ -4,7 +4,7 @@ if (!Array.prototype.drop) {
       var clone = this.slice(0);
       var returnedArray = [];
 
-      for(var n = num - 1; n < clone.length; n++){
+      for(var n = num; n < clone.length; n++){
         returnedArray.push(clone[n]);
       }
       return returnedArray;
